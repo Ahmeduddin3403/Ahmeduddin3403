@@ -1,7 +1,7 @@
 # 👋 Hi, I’m @Ahmeduddin3403
 
 ## About Me
-- 🌐 **Expertise**: I’m a Data Architect with over 12 years of experience in Data Warehouse architecture, Business Intelligence, and ETL development.
+- 🌐 **Expertise**: I’m a Data Architect with over 13 years of experience in Data Warehouse architecture, Business Intelligence, and ETL development.
 - 🔍 **Interests**: I’m deeply interested in cloud data platforms, big data tools, and automation. I am passionate about solving complex data problems and optimizing workflows.
 - 🌱 **Currently Learning**: I’m expanding my knowledge in advanced cloud technologies, AI and Machine Learning.
 - 💼 **Collaboration**: I’m looking to collaborate on projects involving cloud data engineering, innovative ETL solutions, AI and Machine Learning.
