@@ -1,0 +1,25 @@
+import re
+
+# Input and output file names
+input_file = "C:/Ahmed/input.csv"
+output_file = "C:/Ahmed/cleaned_output.csv"
+
+# Function to clean JSON-like fields
+def clean_json_field(value):
+    # Remove ["..."] pattern
+    value = re.sub(r'^\["(.*?)"\]$', r'\1', value)
+    # Remove backslashes (\) inside text fields
+    value = value.replace('\\', '')
+    return value
+
+# Open the input file and create a cleaned output file
+with open(input_file, "r", encoding="utf-8") as infile, open(output_file, "w", encoding="utf-8") as outfile:
+    for line in infile:
+        # Split by pipe delimiter (|)
+        columns = line.strip().split("|")
+        # Clean each column
+        cleaned_columns = [clean_json_field(col) for col in columns]
+        # Join the cleaned columns back into a pipe-delimited row
+        outfile.write("|".join(cleaned_columns) + "\n")
+
+print("Cleaning complete! Check 'cleaned_output.csv'")
